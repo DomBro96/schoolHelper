@@ -3,6 +3,7 @@ package cn.dombro.schoolHelper.service;
 import cn.dombro.schoolHelper.model.*;
 import com.jfinal.aop.Before;
 import com.jfinal.kit.Kv;
+import com.jfinal.plugin.activerecord.Page;
 import com.jfinal.plugin.activerecord.SqlPara;
 import com.jfinal.plugin.activerecord.tx.Tx;
 import org.slf4j.Logger;
@@ -34,10 +35,13 @@ public class MomentService {
         LOGGER.info("向 moment 表中 添加了一条记录 uid : "+ uid +" moment : " +moment+" public : "+pubtime);
     }
 
-    public List<Moment> getList(){
-        String sql = Moment.dao.getSql("moment.getAll");
-        LOGGER.info("从 moment 表中 查询全部记录");
-        return Moment.dao.find(sql);
+    public Page<Moment> getList(int pageNum){
+        //1.得到 SqlPara 对象(该对象封装了带参数的Sql语句，当然也可以不带参数)
+        SqlPara sqlPara = Moment.dao.getSqlPara("moment.getAll");
+        //2.通过 Model.dao.paginate()将 表中记录 分页查询出来
+        Page<Moment> momentPage = Moment.dao.paginate(pageNum,3,sqlPara);
+        LOGGER.info("从 moment 表中 分页查询全部记录 页数： "+pageNum+" 每页大小 ：3");
+        return momentPage;
     }
     //查看 指定 用户 id 的 朋友圈
     public List<Moment> getForUid(int uid){

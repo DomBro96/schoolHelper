@@ -12,6 +12,7 @@
     <title>朋友圈</title>
 </head>
 <body>
+
       <c:if test="${!empty requestScope.momentListMap}">
           <table cellspacing="5">
               <c:forEach items="${requestScope.momentListMap}" var="usermoment" >
@@ -37,6 +38,9 @@
                   </tr>
               </c:forEach >
           </table>
+      </c:if>
+      <c:if test="${!empty requestScope.skip}">
+   <a href="<%=request.getContextPath()%>/moment/showMoment?toPage=${pageNum>1?pageNum-1:1}">上一页</a> ${requestScope.skip} <a href="<%=request.getContextPath()%>/moment/showMoment?toPage=${pageNum<totalPage?pageNum+1:totalPage}">下一页</a>
       </c:if>
 </body>
 </html>

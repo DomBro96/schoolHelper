@@ -46,7 +46,7 @@ public class ServiceTest {
 //        Db.delete("contact",record1);
 //        Record record2 = Db.findFirst("SELECT id, cid FROM contact WHERE id = 6 AND cid = 5");
 //        Db.delete("contact",record2);
-        Contact.dao.findFirst("SELECT id, cid FROM contact WHERE id = 5 and cid = 6").delete();
+          Contact.dao.findFirst("SELECT id, cid FROM contact WHERE id = 5 and cid = 6").delete();
 //        Contact.dao.findFirst("SELECT id, cid FROM contact WHERE id = 6 and cid = 5").deleteById(6);
 
     }
