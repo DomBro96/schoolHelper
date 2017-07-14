@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71c05af9-b606-4f07-9939-2f81cf985f03" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/dombro/schoolHelper/model/Comment.class" afterPath="$PROJECT_DIR$/target/classes/cn/dombro/schoolHelper/model/Comment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/dombro/schoolHelper/service/MomentService.class" afterPath="$PROJECT_DIR$/target/classes/cn/dombro/schoolHelper/service/MomentService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/dombro/schoolHelper/controller/MomentController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/dombro/schoolHelper/controller/MomentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/dombro/schoolHelper/service/MomentService.java" afterPath="$PROJECT_DIR$/src/main/java/cn/dombro/schoolHelper/service/MomentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/front/moment/allMoment.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/front/moment/allMoment.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/ServiceTest.java" />
-    </list>
+    <list default="true" id="71c05af9-b606-4f07-9939-2f81cf985f03" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
