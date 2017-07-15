@@ -62,7 +62,7 @@ public class MyConfig extends JFinalConfig {
     }
 
     public void configInterceptor(Interceptors interceptors) {
-
+        //测试
     }
 
     public void configHandler(Handlers handlers) {
