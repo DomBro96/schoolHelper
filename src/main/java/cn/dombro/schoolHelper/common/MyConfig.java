@@ -63,6 +63,7 @@ public class MyConfig extends JFinalConfig {
 
     public void configInterceptor(Interceptors interceptors) {
         //测试了一下
+        //123
     }
 
     public void configHandler(Handlers handlers) {
